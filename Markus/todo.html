@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>jQuery toDo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        
+
+.container{
+padding: 20px;
+width: 300px;
+margin: 0 auto;
+margin-top: 40px;
+background: white;
+border-radius: 5px;}
+
+form {
+display: inline-block;
+}
+
+input{
+padding: 4px 15px 4px 5px;
+}
+
+#button{
+display: inline-block;
+background-color:grey;
+color:#ffffff;
+text-align:center;
+margin-top:2px;
+padding: 5px 15px;
+}
+
+ol {padding-left: 20px;}
+
+ol li {padding: 5px;color:#000;}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>To Do Liste</h2>
+        <p></p>
+        <form name="toDoList">
+            <input type="text" name="ListItem">
+        </form>
+        <div id="button">hinzufügen</div>
+        <br />
+        <ol></ol>
+    </div>
+    <script>
+    $(document).ready(
+        function() {
+            $('#button').click(
+                function() {
+                    var toAdd = $('input[name=ListItem]').val();
+                    $('ol').append('<li>' + toAdd + '</li>');
+                });
+
+            $(document).on('click', 'li', function() {
+                $(this).animate({opacity: 0.0, paddingLeft:"+=80"}).fadeOut('slow');
+            });
+
+            $('input').focus(function() {
+                $(this).val('');
+            });
+
+            $('ol').sortable();
+
+        }
+    );
+
+    </script>
+</body>
+
+</html>
