@@ -1,0 +1,48 @@
+
+h1	{ font-size: 2em; }
+h2	{ font-size: 1.5em; }
+h3	{ font-size: 1.2em; }
+p	{ font-size: 1em; }
+
+/* 
+* { border: 1px dashed red; }
+*/
+
+* {
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	font-family: calibri;
+	color: dimgray; 
+	margin: 0;
+}
+
+header {
+	padding: 20px;
+	text-align: center;
+}
+
+nav	{
+	
+}
+
+
+main {
+	
+}
+
+section {
+	
+}
+
+article {
+	
+}
+
+aside {
+	
+}
+
+footer {
+	text-align: center;
+}
