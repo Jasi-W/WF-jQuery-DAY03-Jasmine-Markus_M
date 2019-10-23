@@ -14,12 +14,32 @@ body
 	background-size: 90%;
 }
 
+.peach {
+	float: right;
+	padding-right: 30px;
+	padding-top: 190px;
+}
 
-
-
-
+.peach img {
+	width: 90%;
+}
 
 div#moveme
+{
+	width: 6em;
+	height: 6em;
+	font-weight: bold;
+	line-height: 4em;
+	/*text-align: center;*/
+	margin: 5px;
+	/*color: #fff;*/
+	/*background-color: #00c;*/
+	overflow: visible;
+	/*border-radius: 5px;*/
+	/*cursor: default;*/
+}
+
+div#moveprincess
 {
 	width: 6em;
 	height: 6em;
@@ -57,3 +77,62 @@ a
 	color: #00c;
 	margin: 0;
 }
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform:translate(100px, 100px) rotate(0deg) translate(-100px, -100px) rotate(0deg);
+        background-color:red;
+    }  
+  13% {
+        -webkit-transform:translate(100px, 100px) rotate(45deg) translate(-100px, -100px) rotate(-45deg);
+  }
+  25% {
+      -webkit-transform:translate(100px, 100px) rotate(90deg) translate(-100px, -100px) rotate(-90deg);
+  }
+  38% {
+      -webkit-transform:translate(100px, 100px) rotate(135deg) translate(-100px, -100px) rotate(0deg);
+  }
+  50% {
+      -webkit-transform:translate(100px, 100px) rotate(180deg) translate(-100px, -100px) rotate(-180deg);
+  }
+  63% {
+      -webkit-transform:translate(100px, 100px) rotate(225deg) translate(-100px, -100px) rotate(225deg);
+  }
+  75% {
+      -webkit-transform:translate(100px, 100px) rotate(270deg) translate(-100px, -100px) rotate(-270deg);
+  }
+  88% {
+      -webkit-transform:translate(100px, 100px) rotate(315deg) translate(-100px, -100px) rotate(315deg);
+  }
+    100% {
+        -webkit-transform:translate(100px, 100px) rotate(360deg) translate(-100px, -100px) rotate(-360deg);
+    }
+}
+#circle {
+    height: 70px;
+    width: 70px;
+    border-radius:900px;
+    background-image: url("fireball.gif");
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name:"rotate";
+    -webkit-animation-iteration-count: infinite;
+    position:absolute;
+    left:40%;
+    top:10%; 
+}
+svg:hover > #rivets, svg:hover > #question {
+		  fill:#FFC07C;
+    }
+		svg:hover > #borderlefttop {
+		  stroke:#FFC07C;
+    }
+		svg:active > #rivets,svg:active > #borderlefttop {
+		  fill:#000;stroke:#000;}
+		svg:hover > #background,svg:active > #question,svg:active > #questionshadow {
+		  fill:#DE5917;}
+		svg:hover {
+		  animation:jump .2s;}
+		@keyframes jump {
+		  50%{transform:translatey(-10px);}
+      to {transform:translatey(0);}
