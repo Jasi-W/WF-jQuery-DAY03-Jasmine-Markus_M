@@ -8,7 +8,7 @@ $(document).mousemove(function(element) {
 	$("#moveme").on("dblclick", function(){
 		var temp = $("#moveme");
                 temp.hide(1600);
-                $.fx.speeds["very-slow"] = 200;
+                $.fx.speeds["very-slow"] = 4500;
                 temp.show("very-slow");
     $(document).off('mousemove');
 });

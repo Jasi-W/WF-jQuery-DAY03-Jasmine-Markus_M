@@ -10,31 +10,14 @@ body
 	margin: 10px; 
 	color: #333; 
 	background-color: #fff;
+	background-image: url("bg.jpg");
+	background-size: 90%;
 }
 
-header, article, footer, section
-{
-	display: block;
-	margin: 1em;
-}
 
-header
-{
-	font-weight: bold;
-	text-align: center;
-	padding: 6px;
-	color: #fff;
-	background-color: #666;
-	border: 3px double #fff;
-}
 
-footer
-{
-	font-size: 0.9em;
-	text-align: center;
-	padding: 6px;
-	border-top: 1px solid #999;
-}
+
+
 
 div#moveme
 {
